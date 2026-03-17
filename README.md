@@ -1,4 +1,4 @@
-# 🔬 Breast Cancer Classification: 2-Layer Neural Network (From-Scratch)
+# Breast Cancer Classification: 2-Layer Neural Network (From-Scratch)
 
 **Author**: Rohit  
 **Focus**: Machine Learning Math & Linear Algebra (From-Scratch Backpropagation)  
@@ -6,14 +6,14 @@
 
 ---
 
-## 🚀 Why This Project Highlights Core ML Rigor
+## Why This Project Highlights Core ML Rigor
 While modern frameworks like TensorFlow or PyTorch abstract away the complexity, this repository contains a **ground-up implementation** of a 2-layer Neural Network designed with **only NumPy**. 
 
 By manually implementing Backpropagation, Cost computation with Cross-Entropy, and Adaptive weight updating, it demonstrates a complete mastery of the math underpinning Deep Learning (Linear Algebra and Chain Rule Calculus).
 
 ---
 
-## 📊 Key Results & Evaluation
+## Key Results & Evaluation
 The model was evaluated on the **Wisconsin Breast Cancer Dataset** (569 cases, 30 continuous features). 
 
 | Metric | Score (%) |
@@ -21,7 +21,7 @@ The model was evaluated on the **Wisconsin Breast Cancer Dataset** (569 cases, 3
 | **Training Accuracy** | **91.21%** |
 | **Testing Accuracy** (Unseen Data) | **93.86%** |
 
-### 🔍 Confusion Matrix Breakdown (Test Set)
+### Confusion Matrix Breakdown (Test Set)
 In medical applications, **Recall (Sensitivity)** for the Malignant class is crucial (failing to detect cancer carries high risk).
 
 Columns: `[Malignant, Benign]`
@@ -37,7 +37,7 @@ Columns: `[Malignant, Benign]`
 
 ---
 
-## 🧠 Model Architecture & Dimensions
+## Model Architecture & Dimensions
 The network is designed with a **Separation of Concerns (SoC)** approach, making it modular and easy to extend.
 
 | Layer | Type | Nodes | Input Shape | Output Shape | Activation |
@@ -51,7 +51,7 @@ The network is designed with a **Separation of Concerns (SoC)** approach, making
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 *   `data.py`: Connects to `load_breast_cancer()` and prepares standard vector dimensions (Matrices transposed).
 *   `model.py`: Matrix forward and backward prop implementation with Sigmoid/ReLU activations.
 *   `train.py`: Iterative gradient descent loop for weights $(W)$ and bias $(b)$ updates.
@@ -60,7 +60,7 @@ The network is designed with a **Separation of Concerns (SoC)** approach, making
 
 ---
 
-## ⚙️ How to Run & Reproduce
+## How to Run & Reproduce
 1.  **Clone inside the workspace directory**
 2.  **Install requirements**:
     ```bash
