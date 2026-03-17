@@ -1,0 +1,5 @@
+Train Accuracy: 0.9121
+Test Accuracy: 0.9386
+Confusion Matrix:
+[[38  5]
+ [ 2 69]]
