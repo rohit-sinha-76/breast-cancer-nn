@@ -62,8 +62,10 @@ def main():
     plt.grid(True, linestyle='--', alpha=0.7, axis='y')
     
     plt.tight_layout()
-    print("\nDisplaying visualizations... Close the plot window to exit.")
-    plt.show()
+    import os
+    os.makedirs('plots', exist_ok=True)
+    plt.savefig('plots/breast_cancer_training_results.png')
+    print("Saved visualization to plots/")
 
 if __name__ == "__main__":
     main()
